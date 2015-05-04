@@ -539,6 +539,19 @@
     </div>
 -->
 
+   <!-- fireform for email -->
+     <script  src="http://src.fireform.org/fireform.min.js"></script>
+      <script>
+          options={
+            emailNotification:"ganderson7197@icloud.com",
+            emailConfirmationName:"InputName",  //The form input we get the email from.
+            emailConfirmationFrom:"ganderson7197@icloud.com",  //Email appears as sent by this address.
+            emailConfirmationSubject:"Thanks for signing up",
+            emailConfirmationBodyHTML:"<p>You have been signed up!</p>",
+            emailConfirmationBodyText:"You have been signed up!"
+          }
+          new Fireform('#contactForm', 'http://fireform.org/list/256/Portfolio', options);
+      </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
