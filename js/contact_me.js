@@ -59,8 +59,8 @@ $(function() {
 							'content': phone
 						},
 						{
-							'name': message,
-							'content': 'message'
+							'name': 'message',
+							'content': message
 						}
 					]
 					}
