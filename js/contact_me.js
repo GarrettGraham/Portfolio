@@ -45,6 +45,24 @@ $(function() {
 								'name': 'Garrett Anderson',
 								'type': 'to'
 							}],
+					'global_merge_vars': [
+						{
+							'name': 'name',
+							'content': name
+						},
+						{
+							'name': 'email',
+							'content': email
+						},
+						{
+							'name': 'phone',
+							'content': phone
+						},
+						{
+							'name': message,
+							'content': 'message'
+						}
+					]
 					}
                 },
                 cache: false,
