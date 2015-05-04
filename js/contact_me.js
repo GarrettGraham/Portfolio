@@ -20,14 +20,32 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
-             $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
+            $.ajax({
+                url: "https://mandrillapp.com/api/1.0/messages/send-template.json",
+                method: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    'key': 'Be50ItuT9NzIlPX2ESdEUQ',
+					'template_name': 'Portfolio',
+					'template_content': [
+						{
+							'name':'example name',
+							'content': 'example content'
+						}
+					  ],
+					'message': {
+					  'from_email': email,
+						'from_name': name,
+						'headers': {
+							'Reply-To': email
+						},
+						'subject': 'Job Lead',
+						'to': [
+							{
+								'email': 'ganderson7197@icloud.com',
+								'name': 'Garrett Anderson',
+								'type': 'to'
+							}],
+					}
                 },
                 cache: false,
                 success: function() {
