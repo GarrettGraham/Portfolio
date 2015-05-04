@@ -83,6 +83,11 @@ hr.star-primary:after {
 	border-radius: 50%;
 }
 
+/*project images span the width of the div*/
+.img-responsive {
+	width: 400px;
+}
+
 header {
     text-align: center;
     color: #fff;
