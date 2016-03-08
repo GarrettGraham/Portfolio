@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "description": "portfolio",
+  "main": "index.js",
+  "authors": [
+    "Garrett Anderson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/GarrettGraham/Portfolio",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
